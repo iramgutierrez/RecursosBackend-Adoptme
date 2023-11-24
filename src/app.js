@@ -24,6 +24,7 @@ app.engine('handlebars', handlebars.engine())
 app.set('views', './src/views')
 app.set('view engine', 'handlebars')
 
+
 app.get('/pets', async (req, res) => {
   let pets = await petsService.getAll();
   pets = pets.map(pet => pet.toObject())
