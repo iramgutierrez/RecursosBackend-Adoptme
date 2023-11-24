@@ -1,0 +1,15 @@
+<table id="pets">
+  <tr>
+    <th>Nombre</th>
+    <th>Especie</th>
+    <th>Fecha de nacimiento</th>
+  </tr>
+  {{#each pets}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.specie}}</td>
+      <td>{{this.birthDate}}</td>
+    </tr>
+  {{/each}}
+  
+</table>
